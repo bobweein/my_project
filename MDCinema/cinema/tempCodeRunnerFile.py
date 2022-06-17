@@ -1,0 +1,1 @@
+You didn't buy this Tickets! Please buy ticket firstly

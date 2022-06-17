@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MDCinema</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Movie Menu</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="tableWidgetMovieMenu">
+          <column>
+           <property name="text">
+            <string>MAID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>MovieName</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Director</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Actors</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>StartTime</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>EndTime</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Price</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_ViewMenu">
+          <property name="text">
+           <string>View Menu</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>MDCinema/Image/鱼子酱.png</normaloff>MDCinema/Image/鱼子酱.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>View Comments</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_viewcommentMAID">
+          <property name="placeholderText">
+           <string>Please Enter the MAID </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>230</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Users</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>MovieName</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Comments</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_viewComments">
+          <property name="text">
+           <string>View Comments</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>MDCinema/Image/口香糖.png</normaloff>MDCinema/Image/口香糖.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Your Orders</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTableWidget" name="tableWidget_Tickets">
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>142</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>MAID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>MovieName</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>StartTime</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>EndTime</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Price</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_viewTickets">
+          <property name="text">
+           <string>View Tickets</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>MDCinema/Image/果冻.png</normaloff>MDCinema/Image/果冻.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QToolButton" name="toolButton_BuyTicket">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Buy Ticket</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>MDCinema/Image/爆米花.png</normaloff>MDCinema/Image/爆米花.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_bounceTickets">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>BounceTicket</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>MDCinema/Image/奶酪.png</normaloff>MDCinema/Image/奶酪.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_viewTicket">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>ViewTicket</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>MDCinema/Image/华夫饼.png</normaloff>MDCinema/Image/华夫饼.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_giveComments">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Give Comment</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>MDCinema/Image/冰块.png</normaloff>MDCinema/Image/冰块.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuwenjian">
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <addaction name="menuwenjian"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
